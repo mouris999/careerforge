@@ -1,0 +1,9 @@
+{
+  "name": "CareerForge — AI Career & Learning Ecosystem",
+  "description": "Unified AI-powered career preparation, university placement & faculty workspace, and recruiter hiring platform featuring interactive mock interviews, ATS resume intelligence, and live simulations.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

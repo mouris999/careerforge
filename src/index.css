@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+/* Theme palette derived from the Meng To — Singapore Sketchbook landing page
+   (paper #ece7dc, ink #2b2721, earth #9a6a3e), applied onto the app's existing
+   dark surface structure so contrast and component semantics are preserved. */
+@theme {
+  --color-slate-950: #211e1a;
+  --color-slate-900: #2b2721;
+  --color-slate-800: #3a342c;
+  --color-slate-700: #4a4238;
+  --color-slate-600: #5f5548;
+  --color-slate-500: #7a6f60;
+  --color-slate-400: #a39b8a;
+  --color-slate-300: #c3bbaa;
+  --color-slate-200: #e2dccd;
+  --color-slate-100: #ece7dc;
+  --color-slate-50: #f5f1e8;
+
+  --color-indigo-950: #241a12;
+  --color-indigo-900: #2f2218;
+  --color-indigo-800: #3d2c1e;
+  --color-indigo-700: #54402b;
+  --color-indigo-600: #6f5335;
+  --color-indigo-500: #8a6a42;
+  --color-indigo-400: #9a6a3e;
+  --color-indigo-300: #b98a5a;
+  --color-indigo-200: #d4ab7e;
+  --color-indigo-100: #e8cba8;
+
+  --color-emerald-950: #1c2418;
+  --color-emerald-900: #26331f;
+  --color-emerald-800: #33452a;
+  --color-emerald-700: #445837;
+  --color-emerald-600: #556c44;
+  --color-emerald-500: #688253;
+  --color-emerald-400: #7d9965;
+  --color-emerald-300: #96b07e;
+  --color-emerald-200: #b3c9a0;
+
+  --color-amber-950: #2a2010;
+  --color-amber-900: #3a2d16;
+  --color-amber-800: #4d3c1d;
+  --color-amber-700: #665028;
+  --color-amber-600: #7f6631;
+  --color-amber-500: #9a7d3a;
+  --color-amber-400: #b89a4a;
+  --color-amber-300: #d0b565;
+  --color-amber-200: #e5cf8a;
+
+  --color-rose-950: #2a1510;
+  --color-rose-900: #3a1e16;
+  --color-rose-800: #4d281d;
+  --color-rose-700: #663526;
+  --color-rose-600: #7f422f;
+  --color-rose-500: #9a5038;
+  --color-rose-400: #b46548;
+  --color-rose-300: #cc7d5c;
+  --color-rose-200: #e59878;
+
+  --color-purple-950: #221c16;
+  --color-purple-900: #2d2620;
+  --color-purple-800: #3d332a;
+  --color-purple-700: #544536;
+  --color-purple-600: #6f5a45;
+  --color-purple-500: #8a7355;
+  --color-purple-400: #a38a68;
+  --color-purple-300: #bfa483;
+}
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom scrollbar — retoned to the sketchbook ink/earth palette */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(43, 39, 33, 0.6);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(122, 111, 96, 0.6);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(154, 106, 62, 0.8);
+}
